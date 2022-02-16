@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.morenoamor.connectors</groupId>
     <artifactId>metrics-connector</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.8-SNAPSHOT</version>
     <packaging>mule-extension</packaging>
     <name>Metrics Extension</name>
 
@@ -20,7 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <maven.compiler.source>1.11</maven.compiler.source>
+        <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
         <micrometer.version>1.8.2</micrometer.version>

@@ -4,16 +4,17 @@
       xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
           http://www.mulesoft.org/schema/mule/metrics http://www.mulesoft.org/schema/mule/metrics/current/mule-metrics.xsd">
 
-    <metrics:config name="config" configId="configId">
+    <metrics:config name="config" prefix="prefijo">
         <metrics:connection requiredParameter="aValue" />
     </metrics:config>
 
     <flow name="sayHiFlow">
-        <metrics:say-hi person="Mariano Gonzalez"/>
+        <!-- <metrics:say-hi person="Mariano Gonzalez"/> -->
+        <metrics:counter config-ref="config" name="un_counter"/>
     </flow>
 
-    <flow name="retrieveInfoFlow">
+    <!-- <flow name="retrieveInfoFlow">
         <metrics:retrieve-info config-ref="config"/>
-    </flow>
+    </flow> -->
 
 </mule>
